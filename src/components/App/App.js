@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Search from '../../Search';
-import DataLoaderMockyIo from '../../DataLoaderMockyIo';
+import DataLoaderMockyIo from '../../services/DataLoaderMockyIo';
 
 function App() {
   return (
