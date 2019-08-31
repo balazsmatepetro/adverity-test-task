@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AggregatedResultPresenter from './AggregatedResultPresenter';
 
+/**
+ * @param {{numberOfClicks: Number, numberOfImpressions: Number}} props The props of the component.
+ */
 function AggregatedResultPresenterList(props) {
     return (
         <div className="aggregated-result-presenter-list">
