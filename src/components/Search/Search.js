@@ -65,6 +65,8 @@ function Search(props) {
                     onChange={handleChange}
                     openMenuOnClick={false}
                     options={options}
+                    placeholder="What are you looking for?"
+                    noOptionsMessage={() => 'Oh no, there are no matches to the given term! :('}
                 />
 
                 <AggregatedResultPresenterList numberOfClicks={numberOfClicks} numberOfImpressions={numberOfImpressions} />
