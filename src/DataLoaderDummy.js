@@ -8,7 +8,7 @@ class DataLoaderDummy {
      */
     async load() {
         return new Promise((resolve) => {
-            debounce(() => resolve(createData()), 5000);
+            debounce(() => resolve(createSearchResultSet()), 5000);
         });
     }
 }
@@ -18,8 +18,8 @@ class DataLoaderDummy {
  * 
  * @returns {Array<{label: String, value: String, clicks: Number, impressions: Number}>}
  */
-function createData() {
-    return ['dog', 'cat', 'parrot', 'elephant', 'seal', 'ladybug', 'hamster', 'monkey'].map((animal, index) => itemToObject(animal, index + 1));
+function createSearchResultSet() {
+    return ['dog', 'cat', 'parrot', 'elephant', 'seal', 'ladybug', 'hamster', 'monkey'].map((animal, index) => itemToSearchResult(animal, index + 1));
 }
 
 /**
@@ -29,7 +29,7 @@ function createData() {
  * @param {Number} index The index of the item.
  * @returns {{label: String, value: String, clicks: Number, impressions: Number}}
  */
-function itemToObject(item, index) {
+function itemToSearchResult(item, index) {
     const multiplier = (10 * index);
 
     return {
