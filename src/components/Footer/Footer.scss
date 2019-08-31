@@ -1,0 +1,13 @@
+.footer {
+    align-items: center;
+    background-color: #1d354d;
+    color: #fff;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+
+    & > span {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
