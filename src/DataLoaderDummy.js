@@ -1,5 +1,5 @@
-import debounce from 'lodash.delay';
-import map from 'lodash.map';
+import delay from 'lodash/delay';
+import map from 'lodash/map';
 
 class DataLoaderDummy {
     /**
@@ -9,7 +9,7 @@ class DataLoaderDummy {
      */
     async load() {
         return new Promise((resolve) => {
-            debounce(() => resolve(createSearchResultSet()), 5000);
+            delay(() => resolve(createSearchResultSet()), 5000);
         });
     }
 }
