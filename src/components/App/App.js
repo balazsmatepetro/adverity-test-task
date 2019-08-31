@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import Search from './Search';
-import DataLoaderMockyIo from './DataLoaderMockyIo';
+import Search from '../../Search';
+import DataLoaderMockyIo from '../../DataLoaderMockyIo';
 
 function App() {
   return (
