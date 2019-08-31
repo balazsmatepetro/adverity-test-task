@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import Select from 'react-select';
-import DataLoaderDummy from './DataLoaderDummy';
 import AggregatedResultPresenterList from './AggregatedResultPresenterList';
 import ErrorMessage from './ErrorMessage';
 
-function Search() {
+/**
+ * @param {{loadData: Function}} props The props of the component.
+ */
+function Search(props) {
     const [options, setOptions] = useState([]);
     const [hasError, setHasError] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +22,7 @@ function Search() {
     async function loadData() {
         try {
             // Loading data, setting options.
-            setOptions(await new DataLoaderDummy().load());
+            setOptions(await props.loadData());
         } catch (error) {
             // Something went wrong, we have to update the state.
             setHasError(true);
@@ -62,5 +65,9 @@ function Search() {
         </div>
     );
 }
+
+Search.propTypes = {
+    loadData: PropTypes.func.isRequired
+};
 
 export default Search;
