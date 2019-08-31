@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AggregateResultPresenter(props) {
+function AggregatedResultPresenter(props) {
     return (
         <div className="aggregate-result-presenter">
             <div>{props.name}</div>
@@ -9,4 +9,4 @@ function AggregateResultPresenter(props) {
     );
 }
 
-export default AggregateResultPresenter;
+export default AggregatedResultPresenter;
