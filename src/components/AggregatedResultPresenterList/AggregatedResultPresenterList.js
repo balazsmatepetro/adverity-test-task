@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AggregatedResultPresenter from '../AggregatedResultPresenter/AggregatedResultPresenter';
+import './AggregatedResultPresenterList.scss';
 
 /**
  * @param {{numberOfClicks: Number, numberOfImpressions: Number}} props The props of the component.
