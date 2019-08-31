@@ -48,6 +48,7 @@ function Search(props) {
                 <Select
                     components={{ DropdownIndicator: () => null, IndicatorSeparator: () => null }}
                     isClearable={true}
+                    isDisabled={isLoading}
                     isLoading={isLoading}
                     isSearchable={true}
                     onChange={handleChange}
