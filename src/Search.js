@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
 import DataLoaderDummy from './DataLoaderDummy';
 import AggregatedResultPresenterList from './AggregatedResultPresenterList';
+import ErrorMessage from './ErrorMessage';
 
 function Search() {
     const [options, setOptions] = useState([]);
@@ -34,7 +35,7 @@ function Search() {
 
     function renderErrorMessage() {
         return (
-            <div>Something went wrong!</div>
+            <ErrorMessage message="The data couldn't be loaded!" />
         );
     }
 
