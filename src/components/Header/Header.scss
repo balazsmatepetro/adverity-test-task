@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-description-container,
+.header-logo-container {
+    width: 100%;
+}
+
+.header-description-container {
+    background-color: #1d354d;
+    color: #fff;
+    padding: 2rem 0;
+
+    & > h2 {
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+    }
+
+    & > p {
+        margin: 0;
+    }
+}
+
+.header-logo-container {
+    background-color: #fff;
+    padding: 1rem 0;
+
+    & > img {
+        width: 180px;
+    }
+}
