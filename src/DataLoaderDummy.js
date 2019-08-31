@@ -1,4 +1,5 @@
 import debounce from 'lodash.delay';
+import map from 'lodash.map';
 
 class DataLoaderDummy {
     /**
@@ -19,7 +20,7 @@ class DataLoaderDummy {
  * @returns {Array<{label: String, value: String, clicks: Number, impressions: Number}>}
  */
 function createSearchResultSet() {
-    return ['dog', 'cat', 'parrot', 'elephant', 'seal', 'ladybug', 'hamster', 'monkey'].map((animal, index) => itemToSearchResult(animal, index + 1));
+    return map(['dog', 'cat', 'parrot', 'elephant', 'seal', 'ladybug', 'hamster', 'monkey'], (animal, index) => itemToSearchResult(animal, index + 1));
 }
 
 /**
