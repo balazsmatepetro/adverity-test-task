@@ -9,6 +9,8 @@ import ErrorMessage from '../ErrorMessage/ErrorMessage';
  */
 function Search(props) {
     const [options, setOptions] = useState([]);
+    const [numberOfClicks, setNumberOfClicks] = useState(0);
+    const [numberOfImpressions, setNumberOfImpressions] = useState(0);
     const [hasError, setHasError] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -32,8 +34,17 @@ function Search(props) {
         }
     }
 
-    function handleChange() {
+    function handleChange(selected) {
+        let clicks = 0;
+        let impressions = 0;
 
+        if (selected !== null) {
+            clicks = selected.clicks;
+            impressions = selected.impressions;
+        }
+
+        setNumberOfClicks(clicks);
+        setNumberOfImpressions(impressions);
     }
 
     function renderErrorMessage() {
@@ -55,7 +66,7 @@ function Search(props) {
                     options={options}
                 />
 
-                <AggregatedResultPresenterList numberOfClicks={0} numberOfImpressions={0} />
+                <AggregatedResultPresenterList numberOfClicks={numberOfClicks} numberOfImpressions={numberOfImpressions} />
             </div>
         );
     }
