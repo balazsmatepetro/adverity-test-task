@@ -7,7 +7,9 @@ import DataLoaderMockyIo from '../../services/DataLoaderMockyIo';
 function App() {
   return (
     <div className="App">
-      <Search loadData={new DataLoaderMockyIo().load} />
+      <main>
+        <Search loadData={new DataLoaderMockyIo().load} />
+      </main>
     </div>
   );
 }
