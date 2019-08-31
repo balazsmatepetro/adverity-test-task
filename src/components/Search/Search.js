@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import AggregatedResultPresenterList from './AggregatedResultPresenterList';
-import ErrorMessage from './ErrorMessage';
+import AggregatedResultPresenterList from '../AggregatedResultPresenterList/AggregatedResultPresenterList';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 
 /**
  * @param {{loadData: Function}} props The props of the component.
