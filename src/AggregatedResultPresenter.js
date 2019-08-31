@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function AggregatedResultPresenter(props) {
     return (
-        <div className="aggregate-result-presenter">
+        <div className="aggregated-result-presenter">
             <div>{props.name}</div>
             <div>{props.value}</div>
         </div>
