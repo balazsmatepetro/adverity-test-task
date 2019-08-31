@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import AggregatedResultPresenter from './AggregatedResultPresenter';
+import AggregatedResultPresenterList from './AggregatedResultPresenterList';
 
 function App() {
   return (
     <div className="App">
-      <AggregatedResultPresenter name="Clicks" value={10} />
-      <AggregatedResultPresenter name="Impressions" value={20} />
+      <AggregatedResultPresenterList numberOfClicks={100} numberOfImpressions={200} />
     </div>
   );
 }
