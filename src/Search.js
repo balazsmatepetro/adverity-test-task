@@ -23,7 +23,7 @@ function Search(props) {
         try {
             // Loading data, setting options.
             setOptions(await props.loadData());
-        } catch (error) {
+        } catch {
             // Something went wrong, we have to update the state.
             setHasError(true);
         } finally {
