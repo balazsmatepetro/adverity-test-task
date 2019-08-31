@@ -63,6 +63,7 @@ function Search(props) {
                     isLoading={isLoading}
                     isSearchable={true}
                     onChange={handleChange}
+                    openMenuOnClick={false}
                     options={options}
                 />
 
