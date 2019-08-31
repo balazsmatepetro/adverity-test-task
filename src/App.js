@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import AggregatedResultPresenterList from './AggregatedResultPresenterList';
+import Search from './Search';
 
 function App() {
   return (
     <div className="App">
-      <AggregatedResultPresenterList numberOfClicks={100} numberOfImpressions={200} />
+      <Search />
     </div>
   );
 }
