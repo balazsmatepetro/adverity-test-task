@@ -1,0 +1,23 @@
+.aggregated-result-presenter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & > code {
+        background-color: #f5f5f5;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        color: #e83e8c;
+        font-size: 14px;
+        padding: 2px 4px;
+    }
+
+    & > div {
+        margin-right: 5px;
+
+        &:after {
+            content: ':';
+        }
+    }
+}
