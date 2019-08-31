@@ -4,7 +4,7 @@ import './Footer.scss';
 function Footer() {
     return (
         <footer className="footer">
-            Made with <span>&hearts;</span> by <a href="https://github.com/balazsmatepetro">Balázs Máté Petró</a>
+            Made with <span>&hearts;</span> by <a href="https://github.com/balazsmatepetro" target="_blank">Balázs Máté Petró</a>
         </footer>
     );
 }
