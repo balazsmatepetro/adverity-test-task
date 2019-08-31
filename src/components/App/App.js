@@ -1,20 +1,14 @@
 import React from 'react';
-import './App.css';
-
 import Header from '../Header/Header';
-import Search from '../Search/Search';
+import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
-import DataLoaderMockyIo from '../../services/DataLoaderMockyIo';
+import './App.css';
 
 function App() {
   return (
     <div className="app">
       <Header />
-
-      <main className="app-main">
-        <Search loadData={new DataLoaderMockyIo().load} />
-      </main>
-
+      <Content />
       <Footer />
     </div>
   );
