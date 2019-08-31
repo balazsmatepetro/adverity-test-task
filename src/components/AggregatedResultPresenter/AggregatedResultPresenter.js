@@ -8,7 +8,7 @@ function AggregatedResultPresenter(props) {
     return (
         <div className="aggregated-result-presenter">
             <div>{props.name}</div>
-            <div>{props.value}</div>
+            <code>{props.value}</code>
         </div>
     );
 }
