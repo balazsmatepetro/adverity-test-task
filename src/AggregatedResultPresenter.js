@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function AggregatedResultPresenter(props) {
     return (
@@ -8,5 +9,10 @@ function AggregatedResultPresenter(props) {
         </div>
     );
 }
+
+AggregatedResultPresenter.propTypes = {
+    name: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired // TODO: It should accept only positive numbers!
+};
 
 export default AggregatedResultPresenter;
