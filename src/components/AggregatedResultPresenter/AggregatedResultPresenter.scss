@@ -15,6 +15,9 @@
 
     & > div {
         margin-right: 5px;
+        // Regarding we have only to components at this time, it's enough to define only the min-width.
+        min-width: 100px;
+        text-align: right;
 
         &:after {
             content: ':';
