@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AggregatedResultPresenter from './AggregatedResultPresenter';
 
 function AggregatedResultPresenterList(props) {
@@ -9,5 +10,10 @@ function AggregatedResultPresenterList(props) {
         </div>
     );
 }
+
+AggregatedResultPresenterList.propTypes = {
+    numberOfClicks: PropTypes.number.isRequired,
+    numberOfImpressions: PropTypes.number.isRequired
+};
 
 export default AggregatedResultPresenterList;
