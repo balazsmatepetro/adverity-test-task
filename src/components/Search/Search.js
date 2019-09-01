@@ -35,6 +35,11 @@ function Search(props) {
         }
     }
 
+    /**
+     * Handles the element selection by setting the proper state of the component.
+     * 
+     * @param {{clicks: Number, impressions: Number}|null} selected The selected element.
+     */
     function handleChange(selected) {
         let clicks = 0;
         let impressions = 0;
@@ -48,12 +53,18 @@ function Search(props) {
         setNumberOfImpressions(impressions);
     }
 
+    /**
+     * Returns the error message component.
+     */
     function renderErrorMessage() {
         return (
             <ErrorMessage message="The data couldn't be loaded!" />
         );
     }
 
+    /**
+     * Returns the TypeAhead component.
+     */
     function renderTypeAhead() {
         return (
             <div>
