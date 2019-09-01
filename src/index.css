@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   --primary-color: #1d354d;
   --text-color: #212529;
+  --text-color-inverse: #fff;
 }
 
 html, body {

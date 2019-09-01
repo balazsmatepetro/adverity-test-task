@@ -19,8 +19,8 @@ export default {
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
         return {
             ...styles,
-            backgroundColor: isFocused ? 'var(--primary-color)' : '#fff',
-            color: isFocused ? '#fff' : 'var(--primary-color)',
+            backgroundColor: isFocused ? 'var(--primary-color)' : 'var(--text-color-inverse)',
+            color: isFocused ? 'var(--text-color-inverse)' : 'var(--primary-color)',
             transition: 'background-color 0.25s, color 0.25s'
         };
     },
@@ -29,7 +29,7 @@ export default {
         ...styles,
         backgroundColor: 'var(--primary-color)',
         borderRadius: '100%',
-        color: '#fff',
+        color: 'var(--text-color-inverse)',
         cursor: 'pointer',
         height: 28,
         padding: 4,
@@ -37,7 +37,7 @@ export default {
         width: 28,
 
         ':hover': {
-            color: '#fff',
+            color: 'var(--text-color-inverse)',
             transform: 'rotate(360deg)'
         }
     }),
@@ -65,7 +65,7 @@ export default {
 
     noOptionsMessage: () => ({
         backgroundColor: '#ff3860',
-        color: '#fff',
+        color: 'var(--text-color-inverse)',
         fontWeight: 'bold',
         padding: `10px 5px`,
         textAlign: 'center'

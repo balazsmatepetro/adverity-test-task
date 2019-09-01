@@ -12,7 +12,7 @@ $error-message-border-radius: 4px;
 .error-message-header {
     background-color: #ff3860;
     border-radius: ($error-message-border-radius - 1) ($error-message-border-radius - 1) 0 0;
-    color: #fff;
+    color: var(--text-color-inverse);
     font-weight: bold;
     padding: 10px;
 }
