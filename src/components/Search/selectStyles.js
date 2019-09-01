@@ -11,7 +11,7 @@ export default {
         transition: 'border-color 0.5s, box-shadow 0.3s',
 
         ':hover': {
-            borderColor: '#1d354d',
+            borderColor: 'var(--primary-color)',
             boxShadow: '0px 0px 5px 0px rgba(29, 53, 77, 0.5)'
         }
     }),
@@ -19,15 +19,15 @@ export default {
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
         return {
             ...styles,
-            backgroundColor: isFocused ? '#1d354d' : '#fff',
-            color: isFocused ? '#fff' : '#1d354d',
+            backgroundColor: isFocused ? 'var(--primary-color)' : '#fff',
+            color: isFocused ? '#fff' : 'var(--primary-color)',
             transition: 'background-color 0.25s, color 0.25s'
         };
     },
 
     clearIndicator: (styles) => ({
         ...styles,
-        backgroundColor: '#1d354d',
+        backgroundColor: 'var(--primary-color)',
         borderRadius: '100%',
         color: '#fff',
         cursor: 'pointer',

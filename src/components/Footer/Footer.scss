@@ -3,7 +3,7 @@ $heart-icon-dimensions-large: 20px;
 
 .footer {
     align-items: center;
-    background-color: #1d354d;
+    background-color: var(--primary-color);
     color: #fff;
     display: flex;
     font-size: 14px;
@@ -30,7 +30,7 @@ $heart-icon-dimensions-large: 20px;
         $width-addition: 8px;
 
         &:hover {
-            color: #1d354d;
+            color: var(--primary-color);
             transition: color 0.5s;
 
             &:after {
