@@ -4,13 +4,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --primary-color: #1d354d;
+  --text-color: #212529;
 }
 
 html, body {
   height: 100%;
 }
 
-body>div {
+body > div {
+  color: var(--text-color);
   height: inherit;
 }
 
