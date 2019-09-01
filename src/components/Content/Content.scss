@@ -1,9 +1,9 @@
 .content {
     display: flex;
     flex-direction: column;
-    // 260px = The height of the header.
+    // 280px = The height of the header.
     // 30px = The vertical padding of element.
-    height: calc(100% - (260px + 30px));
+    height: calc(100% - (280px + 30px));
     margin: 0 auto;
     max-width: 500px;
     padding: 15px;

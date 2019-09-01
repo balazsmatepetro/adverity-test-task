@@ -1,13 +1,89 @@
+$heart-icon-dimensions-default: 14px;
+$heart-icon-dimensions-large: 20px;
+
 .footer {
     align-items: center;
     background-color: #1d354d;
     color: #fff;
     display: flex;
-    height: 70px;
+    font-size: 14px;
+    flex-direction: column;
+    height: 90px;
     justify-content: center;
 
-    & > span {
-        display: inline-block;
-        margin: 0 5px;
+    & > a {
+        background-color: #ff3860;
+        color: #fff;
+        font-weight: 500;
+        overflow: hidden;
+        padding: 5px 10px;
+        position: relative;
+        text-decoration: none;
+        z-index: 0;
+
+        &:active,
+        &:hover,
+        &:visited {
+            text-decoration: none;
+        }
+
+        $width-addition: 8px;
+
+        &:hover {
+            color: #1d354d;
+            transition: color 0.5s;
+
+            &:after {
+                left: -$width-addition
+            }
+        }
+
+        &:after {
+            background-color: #38e6ff;
+            content: ' ';
+            display: block;
+            height: 100%;
+            left: calc(100% + #{$width-addition});
+            position: absolute;
+            top: 0;
+            transform: skewX(-30deg);
+            transition: left 0.5s;
+            width: 150%;
+            z-index: -1;
+        }
+    }
+}
+
+.footer-heart-icon {
+    animation: heartbeat-animation infinite 1s linear;
+}
+
+.footer-heart-icon-container {
+    height: $heart-icon-dimensions-large;
+    position: relative;
+    text-align: center;
+    top: 2px;
+    width: $heart-icon-dimensions-large * 1.5;
+}
+
+.footer-text-made-with-love {
+    align-items: center;
+    display: inline-flex;
+    height: $heart-icon-dimensions-large + 5px;
+    margin-bottom: 5px;
+}
+
+@keyframes heartbeat-animation {
+    0% {
+      height: $heart-icon-dimensions-default;
+      width: $heart-icon-dimensions-default;
+    }
+    50% {
+        height: $heart-icon-dimensions-large;
+        width: $heart-icon-dimensions-large;
+    }
+    100% {
+        height: $heart-icon-dimensions-default;
+        width: $heart-icon-dimensions-default;
     }
 }
