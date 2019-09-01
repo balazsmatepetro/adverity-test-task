@@ -16,7 +16,3 @@ body > div {
   color: var(--text-color);
   height: inherit;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
