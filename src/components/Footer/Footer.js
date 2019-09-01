@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer-text-made-with-love">
                 Made with
                 <div className="footer-heart-icon-container">
-                    <img class="footer-heart-icon" src={heart} alt="heart" />
+                    <img className="footer-heart-icon" src={heart} alt="heart" />
                 </div>
                 by
             </div>
