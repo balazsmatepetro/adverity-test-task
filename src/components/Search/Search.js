@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 import AggregatedResultPresenterList from '../AggregatedResultPresenterList/AggregatedResultPresenterList';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import selectStyles from './selectStyles';
 
 /**
  * @param {{loadData: Function}} props The props of the component.
@@ -67,6 +68,7 @@ function Search(props) {
                     options={options}
                     placeholder="What are you looking for?"
                     noOptionsMessage={() => 'Oh no, there are no matches for the given term! :('}
+                    styles={selectStyles}
                 />
 
                 <AggregatedResultPresenterList numberOfClicks={numberOfClicks} numberOfImpressions={numberOfImpressions} />
